@@ -414,6 +414,14 @@ img{
     border-radius: .3rem;
     background-color: var(--main-color);
 }
+
+.progress i{
+    font-size: 4rem;
+}
+
+.progress svg.fastapi{
+    fill: #05998b;
+}
 .skills-col:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 90%;
 }
@@ -460,5 +468,6 @@ img{
 
 /* Project Section */
 #project{
-    background-color: var(--main-color);
+    background-color: var(--second-bg-color);
 }
+
