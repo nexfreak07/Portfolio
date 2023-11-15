@@ -8,7 +8,7 @@
     color: black;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     font-family: 'Poppins', 'sans-serif';
 }
 
@@ -86,8 +86,13 @@ section{
 
 .home{
     display: flex;
+    min-height: 100vh;
     align-items: center;
-    padding: 0 9%;
+    /* padding: 0 9%; */
+    padding-bottom: 5rem;
+  padding-top: 8rem;
+
+  /* Pdding is important if items are overflowing in next section on resize */
 }
 .home-content{
     max-width: 60rem;
@@ -245,7 +250,7 @@ div.image-outer{
     
 }
 
-img{
+img.profile{
     border: 10px solid black;
     border-radius: 50% 10%;
 }
@@ -469,5 +474,72 @@ img{
 /* Project Section */
 #project{
     background-color: var(--second-bg-color);
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.card{
+   width: 340px;
+   background-color: #f0f0f0;
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 10%;
+    
+}
+.card-content h3{
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #666;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.card-content .button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    
+}
+.button .btn{
+    font-size: 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.button .btn:nth-child(1){
+    background-color: #7eaaf1;
+    padding: 8px 10px;
+    border: solid black;
+}
+
+.button .btn:nth-child(2){
+    background-color: #abea53;
+    padding: 8px 10px;
+    border: solid black;
+}
+
+.button .btn:nth-child(1):hover{
+    background-color: #0060f9;
+    color: whitesmoke;
+    transition: .2s linear;
+    border: solid  #0060f9;
+}
+.button .btn:nth-child(2):hover{
+    background-color: #27b200;
+    color: whitesmoke;
+    transition: .2s linear;
+    border: solid #27b200;
 }
 
