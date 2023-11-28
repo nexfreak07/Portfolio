@@ -741,4 +741,7 @@ img.profile {
     font-weight: 600;
 
   }
+  .footer-icon-top a{
+    margin-top: 10%;
+  }
 }
