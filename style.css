@@ -731,28 +731,3 @@ img.profile {
     padding-top: 2rem;
   }
 }
-
-@media (max-width: 384px) {
-  html {
-    font-size: 45%;
-  }
-  .home {
-    padding-top: 2rem;
-  }
-  section{
-    min-width: 100vw;
-  }
-
-}
-
-@media (max-width: 360px) {
-  html {
-    font-size: 35%;
-  }
-  .home {
-    padding-top: 1.5rem;
-  }
-  section{
-    min-width: 100vw;
-  }
-}
